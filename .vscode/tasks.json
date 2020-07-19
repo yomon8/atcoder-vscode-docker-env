@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cpp runner",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${workspaceFolder}/tmp/a.out",
+                "-lstdc++",
+                "-g",
+                "&&",
+                "${workspaceFolder}/tmp/a.out",
+                "&&",
+                "rm",
+                "-f",
+                "${workspaceFolder}/tmp/a.out",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "cpp build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${workspaceFolder}/tmp/a.out",
+                "-lstdc++",
+                "--debug",
+                "-g",
+            ],
+            "problemMatcher": []
+        },
+    ]
+}
