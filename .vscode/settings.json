@@ -1,4 +1,8 @@
 {
-    "C_Cpp.clang_format_fallbackStyle": "LLVM",
-    "editor.tabSize": 2
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "editor.tabSize": 2,
+    "files.associations": {
+        "iomanip": "cpp",
+        "ostream": "cpp"
+    }
 }
